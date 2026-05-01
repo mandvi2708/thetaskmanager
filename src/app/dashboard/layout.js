@@ -103,9 +103,7 @@ export default function DashboardLayout({ children }) {
       <aside className={`w-64 border-r bg-card flex-shrink-0 hidden md:flex flex-col shadow-sm transition-all duration-300 ${isSidebarOpen ? 'ml-0' : '-ml-64'}`}>
         <div className="h-16 flex items-center px-6 border-b">
           <Link href="/dashboard" className="flex items-center gap-2.5 font-bold text-xl group">
-            <div className="size-8 rounded-lg bg-primary text-primary-foreground flex items-center justify-center shadow-lg shadow-primary/20 transition-transform group-hover:scale-105">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
-            </div>
+
             TaskFlow
           </Link>
         </div>
