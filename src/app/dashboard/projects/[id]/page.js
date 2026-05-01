@@ -27,6 +27,7 @@ import Link from 'next/link'
 import KanbanBoard from '@/components/KanbanBoard'
 import CreateTaskModal from '@/components/CreateTaskModal'
 import InviteMemberModal from '@/components/InviteMemberModal'
+import DeleteProjectModal from '@/components/DeleteProjectModal'
 import { motion, AnimatePresence } from "framer-motion"
 import { toast } from "sonner"
 
@@ -143,6 +144,7 @@ export default function ProjectPage({ params }) {
         <div className="flex items-center gap-3 pb-1">
           {isAdmin ? (
             <>
+              <DeleteProjectModal project={project} />
               <InviteMemberModal projectId={id} onMemberAdded={() => fetchProjectData(true)} />
               <CreateTaskModal projectId={id} onTaskCreated={handleTaskCreated} />
             </>
